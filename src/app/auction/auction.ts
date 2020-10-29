@@ -1,6 +1,6 @@
 export interface Auction {
-  title: string
-  price: number
+  title: string;
+  price: number;
   imgUrl: string;
-  description?: string
+  description?: string;
 }

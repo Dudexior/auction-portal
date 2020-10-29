@@ -35,7 +35,7 @@ export class AuctionsPageComponent implements OnInit {
       price: 80,
       imgUrl: 'https://picsum.photos/id/111/200/200'
     }
-  ]
+  ];
   constructor() { }
 
   ngOnInit(): void {
