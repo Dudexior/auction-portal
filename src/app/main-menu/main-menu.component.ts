@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-type menuItem = {
+type MenuItem = {
   href: string,
   label: string
 }
@@ -13,7 +13,7 @@ type menuItem = {
 })
 export class MainMenuComponent implements OnInit {
 
-  menuItems: menuItem[] = [
+  menuItems: MenuItem[] = [
     {
       href: 'auctions',
       label: 'Aukcje'
