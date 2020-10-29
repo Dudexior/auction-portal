@@ -12,7 +12,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  appTitle = "Auction Portal!"
+  appTitle = 'Auction Portal!';
 
   constructor() { }
 

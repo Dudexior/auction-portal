@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 type MenuItem = {
   href: string,
   label: string
-}
+};
 
 @Component({
   selector: 'app-main-menu',
@@ -26,7 +26,7 @@ export class MainMenuComponent implements OnInit {
       href: 'advices',
       label: 'Podpowiadamy'
     }
-  ]
+  ];
 
   showNavbar = false;
 
