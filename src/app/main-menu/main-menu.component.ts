@@ -1,9 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
-type MenuItem = {
-  href: string,
-  label: string
-};
+import { MenuItem } from './menu-item';
 
 @Component({
   selector: 'app-main-menu',
