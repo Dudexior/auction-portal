@@ -1,5 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 
+type menuItem = {
+  href: string,
+  label: string
+}
+
 @Component({
   selector: 'app-main-menu',
   templateUrl: './main-menu.component.html',
@@ -8,7 +13,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainMenuComponent implements OnInit {
 
-  menuItems = ['Aukcje', 'Promocje', 'Podpowiadamy'];
+  menuItems: menuItem[] = [
+    {
+      href: 'auctions',
+      label: 'Aukcje'
+    },
+    {
+      href: 'promotions',
+      label: 'Promocje'
+    },
+    {
+      href: 'advices',
+      label: 'Podpowiadamy'
+    }
+  ]
 
   showNavbar = false;
 

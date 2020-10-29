@@ -5,7 +5,7 @@
   <div class="collapse navbar-collapse" [class.show]="showNavbar">
     <ul class="navbar-nav">
       <li *ngFor="let item of menuItems">
-        <a class="nav-link" href="auctions">{{item}}</a>
+        <a class="nav-link" [href]="item.href">{{item.label}}</a>
       </li>
       <li>
         <i class="fa fa-user"></i>
