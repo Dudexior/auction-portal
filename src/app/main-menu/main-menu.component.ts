@@ -10,6 +10,8 @@ export class MainMenuComponent implements OnInit {
 
   menuItems = ['Aukcje', 'Promocje', 'Podpowiadamy'];
 
+  showNavbar = false;
+
   constructor() { }
 
   ngOnInit(): void {
