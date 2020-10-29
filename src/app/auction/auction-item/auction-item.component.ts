@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Auction } from '../auction';
 
 @Component({
@@ -9,11 +9,8 @@ import { Auction } from '../auction';
 })
 export class AuctionItemComponent implements OnInit {
 
-  auction: Auction = {
-    title: 'Kawiarka',
-    price: 60,
-    imgUrl: 'https://picsum.photos/id/36/200/200'
-  };
+  @Input() auction: Auction;
+
   canAddToCart = true;
 
   constructor() { }

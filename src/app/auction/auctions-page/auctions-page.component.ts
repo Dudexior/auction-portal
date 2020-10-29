@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Auction } from '../auction';
 
 @Component({
   selector: 'app-auctions-page',
@@ -6,8 +7,8 @@ import { Component, OnInit } from '@angular/core';
     <section>
       <h2> Lista naszych aukcji </h2>
       <div class="row">
-        <div class="col-12 col-sm-6 col-md-3 col-lg-3">
-          <app-auction-item></app-auction-item>
+        <div *ngFor="let auction of auctions" class="col-12 col-sm-6 col-md-3 col-lg-3">
+          <app-auction-item [auction]="auction"></app-auction-item>
         </div>
       </div>
     </section>
@@ -17,6 +18,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AuctionsPageComponent implements OnInit {
 
+  auctions: Auction[] = [
+    {
+      title: 'Kawiarka',
+      price: 60,
+      imgUrl: 'https://picsum.photos/id/36/200/200'
+    },
+    {
+      title: 'Kawiarka z opisem',
+      price: 60,
+      imgUrl: 'https://picsum.photos/id/36/200/200',
+      description: 'Voluptate veniam occaecat Lorem et eu Lorem. Non eiusmod enim cupidatat mollit. Enim duis non nostrud ex adipisicing nostrud eiusmod qui excepteur adipisicing quis in. Exercitation ipsum ad sint commodo incididunt anim ullamco exercitation.'
+    }
+  ]
   constructor() { }
 
   ngOnInit(): void {
