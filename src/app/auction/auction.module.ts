@@ -7,13 +7,15 @@ import { AuctionItemComponent } from './auction-item/auction-item.component';
 import { PromotionsPageComponent } from './promotions-page/promotions-page.component';
 import { AddAuctionPageComponent } from './add-auction-page/add-auction-page.component';
 import { ShoppingCartPageComponent } from './shopping-cart-page/shopping-cart-page.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
   declarations: [AuctionsPageComponent, AuctionItemComponent, PromotionsPageComponent, AddAuctionPageComponent, ShoppingCartPageComponent],
   imports: [
     CommonModule,
-    AuctionRoutingModule
+    AuctionRoutingModule,
+    FormsModule
   ],
   exports: []
 })
