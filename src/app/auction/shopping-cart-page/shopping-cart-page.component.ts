@@ -10,6 +10,7 @@ import { CartService } from '../cart.service';
 })
 export class ShoppingCartPageComponent implements OnInit {
 
+  today = new Date();
   cartItems: Auction[] = [];
 
   constructor(private cartService: CartService) { }
@@ -17,7 +18,7 @@ export class ShoppingCartPageComponent implements OnInit {
   ngOnInit(): void {
     this.cartService.getItems().subscribe(items => {
       this.cartItems = items;
-    })
+    });
   }
 
 }

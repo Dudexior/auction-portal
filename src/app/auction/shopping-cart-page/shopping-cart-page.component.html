@@ -1,6 +1,10 @@
 <h2>Elementy w koszyku</h2>
+<div>{{today}}</div>
+<div>{{today | date}}</div>
+<div>{{today | date:'yyyy-MM-dd'}}</div>
+<div>{{ 'hello world' | uppercase }}</div>
 <ul class="list-group">
   <li class="list-group-item" *ngFor="let item of cartItems">
-    {{item | json}}
+    {{item | json | lowercase}}
   </li>
 </ul>
