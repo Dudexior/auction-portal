@@ -6,10 +6,11 @@ import { PromotionsPageComponent } from './promotions-page/promotions-page.compo
 import { ShoppingCartPageComponent } from './shopping-cart-page/shopping-cart-page.component';
 
 const routes: Routes = [
-  { path: '', component: AuctionsPageComponent },
+  { path: 'auctions', component: AuctionsPageComponent },
   { path: 'promotions', component: PromotionsPageComponent },
   { path: 'add-auction', component: AddAuctionPageComponent },
-  { path: 'shopping-cart', component: ShoppingCartPageComponent }
+  { path: 'shopping-cart', component: ShoppingCartPageComponent },
+  { path: '**', component: PromotionsPageComponent }
 ];
 
 @NgModule({

@@ -19,8 +19,8 @@ import { AdviceModule } from './advice/advice.module';
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
+    AdviceModule,
     AuctionModule,
-    AdviceModule
   ],
   providers: [],
   bootstrap: [AppComponent]
