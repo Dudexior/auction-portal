@@ -5,7 +5,8 @@
   <div class="collapse navbar-collapse" [class.show]="showNavbar">
     <ul class="navbar-nav">
       <li *ngFor="let item of menuItems">
-        <a class="nav-link" [href]="item.href">{{item.label}}</a>
+        <a class="nav-link" [routerLink]="item.href" routerLinkActive="active">{{item.label}}</a>
+        <!-- routerLinkActive="class" class to be assigned when the link is active -->
       </li>
       <li>
         <i class="fa fa-user"></i>
@@ -13,10 +14,10 @@
     </ul>
   </div>
   <div class="text-light">
-    <a class="btn btn-primary" href="add-auction">
+    <a class="btn btn-primary" routerLink="add-auction">
       <i class="fa fa-plus"></i> Dodaj
     </a>
-    <a class="btn btn-secondary ml-2" href="shopping-cart">
+    <a class="btn btn-secondary ml-2" routerLink="shopping-cart">
       <i class="fa fa-shopping-basket"></i> Koszyk
     </a>
   </div>
