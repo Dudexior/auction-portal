@@ -26,7 +26,7 @@ export class AuctionsPageComponent implements OnInit {
   ngOnInit(): void {
     this.auctionsService.getAuctions().subscribe((res: Auction[]) => {
       this.auctions = res;
-    })
+    });
   }
 
 }
