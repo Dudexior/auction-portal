@@ -7,6 +7,7 @@ import { HeaderComponent } from './header/header.component';
 import { MainMenuComponent } from './main-menu/main-menu.component';
 import { AuctionModule } from './auction/auction.module';
 import { HttpClientModule } from '@angular/common/http';
+import { AdviceModule } from './advice/advice.module';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
-    AuctionModule
+    AuctionModule,
+    AdviceModule
   ],
   providers: [],
   bootstrap: [AppComponent]
