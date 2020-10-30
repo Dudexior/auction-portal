@@ -8,9 +8,9 @@ describe('HeaderComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ HeaderComponent ]
+      declarations: [HeaderComponent]
     })
-    .compileComponents();
+      .compileComponents();
   });
 
   beforeEach(() => {
@@ -21,5 +21,22 @@ describe('HeaderComponent', () => {
 
   it('should create', () => {
     expect(component).toBeTruthy();
+  });
+
+  it('should render proper title', () => {
+    // GIVEN:
+    // assigning value to variable
+    component.appTitle = 'TEST';
+    // refersh of component
+    fixture.detectChanges();
+
+    // WHEN:
+    // assigning variables;
+    const h1 = fixture.nativeElement.querySelector('h1');
+    const text = h1.textContent;
+
+    // THEN:
+    // test check
+    expect(text).toContain('TEST');
   });
 });
