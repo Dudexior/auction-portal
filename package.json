@@ -6,6 +6,7 @@
     "start": "ng serve --o",
     "start-backend:mock": "json-server --watch MOCK/mock-db.json",
     "build": "ng build",
+    "build:prod": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
     "lint:fix": "ng lint --fix",
