@@ -7,7 +7,8 @@ import { HeaderComponent } from './header/header.component';
 import { MainMenuComponent } from './main-menu/main-menu.component';
 import { AuctionModule } from './auction/auction.module';
 import { HttpClientModule } from '@angular/common/http';
-import { AdviceModule } from './advice/advice.module';
+// replaced by lazy loading
+// import { AdviceModule } from './advice/advice.module';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { AdviceModule } from './advice/advice.module';
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
-    AdviceModule,
+    // replaced by lazy loading
+    // AdviceModule,
     AuctionModule,
   ],
   providers: [],
