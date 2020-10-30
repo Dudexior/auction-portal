@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Auction } from '../auction';
+import { CartService } from '../cart.service';
 
 @Component({
   selector: 'app-auction-item',
@@ -13,9 +14,12 @@ export class AuctionItemComponent implements OnInit {
 
   canAddToCart = true;
 
-  constructor() { }
+  constructor(private cartService: CartService) { }
 
   ngOnInit(): void {
   }
 
+  handleAddToCart(): void {
+    this.cartService.addItem(this.auction);
+  }
 }

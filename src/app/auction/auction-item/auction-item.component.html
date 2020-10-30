@@ -5,7 +5,7 @@
     <p class="card-text">{{auction.description}}</p>
     <div class="d-flex justify-content-between align-content-center">
       <strong> {{auction.price}} zł</strong>
-      <button *ngIf="canAddToCart" class="btn btn-primary">
+      <button *ngIf="canAddToCart" class="btn btn-primary" (click)="handleAddToCart()">
         <i class="fa fa-cart-plus"></i>
       </button>
     </div>
