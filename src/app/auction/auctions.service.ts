@@ -16,4 +16,8 @@ export class AuctionsService {
   getAuctions(): Observable<Auction[]> {
     return this.http.get<Auction[]>(this.baseURL + '/auctions');
   }
+
+  addAuction(auction: Auction): Observable<Auction[]> {
+    return this.http.post<Auction[]>(this.baseURL + '/auctions', auction);
+  }
 }
